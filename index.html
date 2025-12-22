@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEET KETAN | Ketan Saxena Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-zinc-950 { background-color: #09090b; }
+        .selection-indigo { selection-background-color: rgba(99, 102, 241, 0.3); }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 antialiased selection:bg-indigo-500/30">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-6">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <a href="#home" class="text-xl font-black tracking-[0.2em] hover:text-indigo-400 transition-colors uppercase">
+                MEET KETAN
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors">Home</a>
+                <a href="#experience" class="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors">Experience</a>
+                <a href="#skills" class="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors">Skills</a>
+                <a href="#publications" class="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors">Publications</a>
+                <a href="#contact" class="text-xs font-bold uppercase tracking-[0.2em] text-zinc-400 hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="md:hidden p-2" id="menu-btn">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-zinc-900 border-b border-zinc-800 p-6 flex flex-col space-y-4 shadow-2xl">
+            <a href="#home" class="text-lg font-medium text-zinc-300 hover:text-indigo-400 uppercase tracking-widest">Home</a>
+            <a href="#experience" class="text-lg font-medium text-zinc-300 hover:text-indigo-400 uppercase tracking-widest">Experience</a>
+            <a href="#skills" class="text-lg font-medium text-zinc-300 hover:text-indigo-400 uppercase tracking-widest">Skills</a>
+            <a href="#publications" class="text-lg font-medium text-zinc-300 hover:text-indigo-400 uppercase tracking-widest">Publications</a>
+            <a href="#contact" class="text-lg font-medium text-zinc-300 hover:text-indigo-400 uppercase tracking-widest">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20 grayscale bg-cover bg-center" 
+             style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2000&auto=format&fit=crop');">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-zinc-950/10 via-zinc-950/80 to-zinc-950 z-0"></div>
+
+        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+            <h1 class="text-6xl md:text-[120px] font-black mb-8 tracking-tighter leading-none uppercase">
+                KETAN <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-indigo-500">
+                    SAXENA
+                </span>
+            </h1>
+            <p class="text-indigo-400 text-lg md:text-2xl max-w-2xl mx-auto mb-12 font-bold tracking-[0.1em] uppercase">
+                Engineering Leader | Problem Solver | Aspiring writer
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="#experience" class="bg-white text-zinc-950 px-10 py-4 rounded-full font-black hover:bg-indigo-500 hover:text-white transition-all transform hover:-translate-y-1">
+                    EXPERIENCE
+                </a>
+                <a href="#contact" class="border-2 border-zinc-700 px-10 py-4 rounded-full font-black hover:border-white transition-all">
+                    GET IN TOUCH
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <i data-lucide="chevron-down" class="text-zinc-500"></i>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-center gap-6 mb-20">
+                <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter">Work Experience</h2>
+                <div class="h-1 flex-grow bg-zinc-900 rounded-full"></div>
+            </div>
+            
+            <div class="space-y-16">
+                <!-- EM Role -->
+                <div class="relative pl-8 md:pl-0 grid md:grid-cols-[200px_1fr] gap-8 group">
+                    <div class="text-indigo-500 font-black text-xl tracking-tighter">2021 - Present</div>
+                    <div class="border-l-2 border-zinc-800 md:border-l-0 md:pl-0 pl-8 group-hover:border-indigo-500 transition-colors">
+                        <h3 class="text-3xl font-black uppercase mb-1 group-hover:text-indigo-400 transition-colors">Engineering Manager</h3>
+                        <p class="text-zinc-500 font-bold mb-6 tracking-wider">Delivery Hero / Talabat, Berlin / Dubai</p>
+                        <p class="text-zinc-400 leading-relaxed text-lg max-w-4xl">Responsible for working on multiple projects, delivering tasks and making sure squads are meeting the deadlines and OKRs. Create long term technical roadmaps for products and milestone breakdowns. Making sure that the code and the architecture are scalable and maintainable across multiple projects in the company by following suitable patterns and best practices. Involved in hands-on coding for sprint tasks (~30%). Conducting technical interviews for new hires.</p>
+                    </div>
+                </div>
+
+                <!-- Senior Role -->
+                <div class="relative pl-8 md:pl-0 grid md:grid-cols-[200px_1fr] gap-8 group">
+                    <div class="text-indigo-500 font-black text-xl tracking-tighter">2016 - 2020</div>
+                    <div class="border-l-2 border-zinc-800 md:border-l-0 md:pl-0 pl-8 group-hover:border-indigo-500 transition-colors">
+                        <h3 class="text-3xl font-black uppercase mb-1 group-hover:text-indigo-400 transition-colors">Senior Engineer | Tech Lead</h3>
+                        <p class="text-zinc-500 font-bold mb-6 tracking-wider">Gammastack, Indore, India</p>
+                        <p class="text-zinc-400 leading-relaxed text-lg max-w-4xl">Responsible for leading multiple projects, creating architecture as per clients needs and managing client's expectations. Ensuring scalability and maintainability across multiple teams by following suitable patterns. Create and deploy complex microservice as well as serverless architectures over cloud.</p>
+                    </div>
+                </div>
+
+                <!-- SE Role -->
+                <div class="relative pl-8 md:pl-0 grid md:grid-cols-[200px_1fr] gap-8 group">
+                    <div class="text-indigo-500 font-black text-xl tracking-tighter">2014 - 2016</div>
+                    <div class="border-l-2 border-zinc-800 md:border-l-0 md:pl-0 pl-8 group-hover:border-indigo-500 transition-colors">
+                        <h3 class="text-3xl font-black uppercase mb-1 group-hover:text-indigo-400 transition-colors">Software Engineer</h3>
+                        <p class="text-zinc-500 font-bold mb-6 tracking-wider">Webonise Lab, Pune, India</p>
+                        <p class="text-zinc-400 leading-relaxed text-lg max-w-4xl">Worked on a wide array of technologies and took architectural decisions. Mentored other developers, performed code reviews, managed deployments and CI setup. Key member for client interaction and requirement analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-32 px-6 bg-zinc-900/30">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">My Skills</h2>
+                <p class="text-zinc-500 font-bold uppercase tracking-widest">Architectural Mastery & Technical Leadership</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-10 rounded-[2.5rem] bg-zinc-900 border border-zinc-800 hover:border-indigo-500/30 transition-all group shadow-2xl">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-8 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-500">
+                        <i data-lucide="code" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mb-4">Fullstack Development</h3>
+                    <p class="text-zinc-400 leading-relaxed text-lg">Hands on experience in Nodejs, Angular, React.js, GoLang, Ruby on rails and frameworks like Meteor.js. I code with SOLID and DRY concepts in mind while using modern tools like Datadog, Grafana, and Google Analytics for data-driven development.</p>
+                </div>
+
+                <div class="p-10 rounded-[2.5rem] bg-zinc-900 border border-zinc-800 hover:border-indigo-500/30 transition-all group shadow-2xl">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-8 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-500">
+                        <i data-lucide="cloud" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mb-4">AWS Cloud Architectures</h3>
+                    <p class="text-zinc-400 leading-relaxed text-lg">Extensive experience using AWS services (Lambda, EC2, ECS, Route53, ELBs, Beanstalk) to deploy complex architectures. Using Infra-as-code tools like CloudFormation and Terraform for scalable environments.</p>
+                </div>
+
+                <div class="p-10 rounded-[2.5rem] bg-zinc-900 border border-zinc-800 hover:border-indigo-500/30 transition-all group shadow-2xl">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-8 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-500">
+                        <i data-lucide="cpu" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mb-4">Container Orchestration</h3>
+                    <p class="text-zinc-400 leading-relaxed text-lg">Docker-based microservice deployment solutions using orchestration tools like Compose, Kubernetes, Helm Charts, ECS, and EKS.</p>
+                </div>
+
+                <div class="p-10 rounded-[2.5rem] bg-zinc-900 border border-zinc-800 hover:border-indigo-500/30 transition-all group shadow-2xl">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-8 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-500">
+                        <i data-lucide="briefcase" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mb-4">Project Planning and Agile</h3>
+                    <p class="text-zinc-400 leading-relaxed text-lg">An expert in starting projects from scratch. Expertise in Agile software life cycles, leading multiple projects, and managing stakeholder expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-center gap-6 mb-20">
+                <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter">Publications & Contributions</h2>
+                <div class="h-1 flex-grow bg-zinc-900 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- NPM -->
+                <a href="https://www.npmjs.com/package/yaml-schema-validator" target="_blank" class="group p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800 hover:bg-zinc-800/80 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="text-indigo-500 mb-6"><i data-lucide="box"></i></div>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">YAML/JSON Schema Validator</h3>
+                        <p class="text-zinc-500 font-bold uppercase text-[10px] tracking-[0.2em] mb-4">NPM Package</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-6 pt-6 border-t border-zinc-800">
+                        <span class="text-zinc-400 text-sm font-medium">75K monthly downloads</span>
+                        <i data-lucide="external-link" class="w-4 h-4 text-zinc-600 group-hover:text-white"></i>
+                    </div>
+                </a>
+
+                <!-- Medium 1 -->
+                <a href="https://medium.com/gammastack/mounting-environment-variables-safely-with-kubernetes-secrets-and-helm-chart-764420dc787b" target="_blank" class="group p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800 hover:bg-zinc-800/80 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="text-indigo-500 mb-6"><i data-lucide="book-open"></i></div>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">Mount Environment Variables Safely with Helm charts</h3>
+                        <p class="text-zinc-500 font-bold uppercase text-[10px] tracking-[0.2em] mb-4">Medium.com Blog</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-6 pt-6 border-t border-zinc-800">
+                        <span class="text-zinc-400 text-sm font-medium">Technical Guide</span>
+                        <i data-lucide="external-link" class="w-4 h-4 text-zinc-600 group-hover:text-white"></i>
+                    </div>
+                </a>
+
+                <!-- Medium 2 -->
+                <a href="https://medium.com/gammastack/hyperledger-fabric-setup-on-kubernetes-cluster-22ad4ff844ee" target="_blank" class="group p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800 hover:bg-zinc-800/80 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="text-indigo-500 mb-6"><i data-lucide="book-open"></i></div>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">HyperLedger Fabric Setup On Kubernetes Cluster</h3>
+                        <p class="text-zinc-500 font-bold uppercase text-[10px] tracking-[0.2em] mb-4">Medium.com Blog</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-6 pt-6 border-t border-zinc-800">
+                        <span class="text-zinc-400 text-sm font-medium">Blockchain & DevOps</span>
+                        <i data-lucide="external-link" class="w-4 h-4 text-zinc-600 group-hover:text-white"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-6 bg-zinc-100 text-zinc-950 rounded-[3rem] md:rounded-[5rem] mx-4 mb-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-6xl md:text-[100px] font-black mb-12 tracking-tighter uppercase leading-[0.85]">
+                Let's Start <br /> A Conversation
+            </h2>
+            <p class="text-zinc-600 text-xl md:text-2xl mb-16 font-medium max-w-2xl mx-auto">
+                Currently open to leadership roles and architectural consulting.
+            </p>
+            <a href="mailto:ketan.1806@gmail.com" class="text-3xl md:text-6xl font-black underline hover:text-indigo-600 transition-colors break-all">
+                ketan.1806@gmail.com
+            </a>
+
+            <div class="flex justify-center gap-12 mt-24">
+                <a href="https://www.linkedin.com/in/ketan-saxena-157b2878/" target="_blank" class="hover:scale-125 transition-transform"><i data-lucide="linkedin" class="w-10 h-10"></i></a>
+                <a href="https://github.com/ketanSaxena" target="_blank" class="hover:scale-125 transition-transform"><i data-lucide="github" class="w-10 h-10"></i></a>
+                <a href="https://meetketan.com" target="_blank" class="hover:scale-125 transition-transform"><i data-lucide="globe" class="w-10 h-10"></i></a>
+                <a href="mailto:ketan.1806@gmail.com" class="hover:scale-125 transition-transform"><i data-lucide="mail" class="w-10 h-10"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 text-zinc-600 text-center font-bold text-xs tracking-widest uppercase">
+        <p>© 2024 KETAN SAXENA — BUILT FOR SCALE</p>
+        <p class="mt-2 text-[10px] opacity-50">meetketan.com</p>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.onscroll = () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-zinc-950/90', 'backdrop-blur-md', 'py-4', 'shadow-xl', 'border-b', 'border-zinc-800/50');
+                navbar.classList.remove('bg-transparent', 'py-6');
+            } else {
+                navbar.classList.remove('bg-zinc-950/90', 'backdrop-blur-md', 'py-4', 'shadow-xl', 'border-b', 'border-zinc-800/50');
+                navbar.classList.add('bg-transparent', 'py-6');
+            }
+        };
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.onclick = () => {
+            mobileMenu.classList.toggle('hidden');
+        };
+    </script>
+</body>
+</html>
