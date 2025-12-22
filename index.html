@@ -56,8 +56,40 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Load critical CSS first -->
+<style>
+  /* Critical styles that must show immediately */
+  body { 
+    font-family: 'Inter', sans-serif;
+    background-color: #09090b;
+    color: #f4f4f5;
+    margin: 0;
+  }
+  /* Ensure content is visible while Tailwind loads */
+  [data-loaded="false"] { opacity: 0; }
+  [data-loaded="true"] { opacity: 1; transition: opacity 0.3s; }
+</style>
+
+<!-- Async load Tailwind -->
+<script>
+  // Set initial state
+  document.body.setAttribute('data-loaded', 'false');
+  
+  // Load Tailwind after page is interactive
+  window.addEventListener('DOMContentLoaded', function() {
+    const script = document.createElement('script');
+    script.src = 'https://cdn.tailwindcss.com';
+    script.onload = function() {
+      document.body.setAttribute('data-loaded', 'true');
+      // Initialize Lucide after Tailwind (optional)
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    };
+    document.head.appendChild(script);
+  });
+</script>
+    <script defer src="https://unpkg.com/lucide@latest"></script>
     <style>
         body { font-family: 'Inter', sans-serif; }
         .bg-zinc-950 { background-color: #09090b; }
